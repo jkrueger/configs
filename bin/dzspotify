@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+echo "^fg()No Track"
+/home/jan/bin/spotify-notify.py | grep --line-buffered "Changing track : " | sed -e 's/Changing track : \(.*\)$/^fg()\1/'
