@@ -6,4 +6,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-^fg()${time %a %b %d %I:%M%P}  
+^fg()${battery_short}    ^fg()${time %a %b %d %I:%M%P}  

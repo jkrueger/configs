@@ -72,12 +72,13 @@ applicationRules = composeAll [
           resource  =? "notify-osd" --> doIgnore
         , className =? "Emacs"      --> doF(W.shift "dev")
         , className =? "Pidgin"     --> doF(W.shift "chat")
+        , className =? "Empathy"    --> doF(W.shift "chat")
         , className =? "Spotify"    --> doF(W.shift "music")
     ]
 
 tiledLayout   = ResizableTall 1 0.03 0.75 []
 defaultLayout = avoidStruts $ (tiledLayout ||| Full)
-chatLayout    = reflectHoriz $ withIM (2%12) (Title "Buddy List") Grid ||| Full
+chatLayout    = reflectHoriz $ withIM (2%12) (Or (ClassName "Pidgin") (ClassName "Empathy")) Grid ||| Full
 
 layout = avoidStruts $ onWorkspace "chat" chatLayout $ defaultLayout
 
