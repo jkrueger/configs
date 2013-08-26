@@ -4,6 +4,7 @@ import System.IO
 import XMonad
 import XMonad.Config.Gnome
 import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.FadeInactive
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
@@ -64,12 +65,14 @@ main = do
             , manageHook         = applicationRules <+> manageDocks
             , layoutHook         = layout
             , logHook            = logHandler leftBarPipe
+            , handleEventHook    = fullscreenEventHook
      } `additionalKeys` keyOverrides
 
 -- application rules
 
 applicationRules = composeAll [
-          resource  =? "notify-osd" --> doIgnore
+        isFullscreen                --> doFullFloat
+        , resource  =? "notify-osd" --> doIgnore
         , className =? "Emacs"      --> doF(W.shift "dev")
         , className =? "Pidgin"     --> doF(W.shift "chat")
         , className =? "Empathy"    --> doF(W.shift "chat")
@@ -78,9 +81,9 @@ applicationRules = composeAll [
 
 tiledLayout   = ResizableTall 1 0.03 0.75 []
 defaultLayout = avoidStruts $ (tiledLayout ||| Full)
-chatLayout    = reflectHoriz $ withIM (2%12) (Or (ClassName "Pidgin") (ClassName "Empathy")) Grid ||| Full
+chatLayout    = reflectHoriz $ withIM (2%12) (Or (Title "Buddy List") (ClassName "Empathy")) Grid ||| Full
 
-layout = avoidStruts $ onWorkspace "chat" chatLayout $ defaultLayout
+layout = avoidStruts $ onWorkspace "chat" chatLayout $ lessBorders OnlyFloat defaultLayout
 
 logHandler bar = dynamicLogWithPP $ defaultPP
     {
