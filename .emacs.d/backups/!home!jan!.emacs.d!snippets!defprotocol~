@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: defprotocol
-# key: prot
-# binding: direct-keybinding
-# expand-env: ((some-var some-value))
-# type: command
-# --
-(defprotocol $1 [$2]
-  ($3 [_ $4]))

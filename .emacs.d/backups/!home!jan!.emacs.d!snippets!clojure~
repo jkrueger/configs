@@ -1,5 +1,0 @@
-#key : prot
-#name : defprotocol
-#--
-(defprotocol $1 [$2]
-  ($3 [_]))
