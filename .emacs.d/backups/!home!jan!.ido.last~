@@ -1,0 +1,86 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jan/.emacs.d/" . "snippets/")
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/backends/linux/src/" . "firewall/")
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/backends/linux/" . "src/")
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/backends/" . "linux/")
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/module/src/" . "firewall/")
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/module/" . "src/")
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/" . "backends/")
+ ("/home/jan/Documents/xutm/repos/backend.module/" . "firewall/")
+ ("/home/jan/Documents/xutm/repos/" . "backend.module/")
+ ("/home/jan/Documents/xutm/src/" . "config/")
+ ("/home/jan/Documents/xutm/" . "repos/")
+ ("/home/jan/Documents/" . "xutm/")
+ ("/home/jan/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jan/"
+ "/home/jan/.emacs.d/"
+ "/home/jan/.emacs.d/snippets/"
+ "/home/jan/Documents/xutm/repos/backend.module/firewall/backends/linux/src/firewall/"
+ "/home/jan/Documents/xutm/repos/backend.module/firewall/backends/"
+ "/home/jan/Documents/xutm/repos/backend.module/firewall/module/src/firewall/"
+ "/home/jan/Documents/xutm/src/config/"
+ "/home/jan/dzen/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "jan.el"
+ "clojure"
+ "backend.clj"
+ "project.clj"
+ "commit.clj"
+ "migrate_config.clj"
+ "draw.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jan/" (21019 18650) ".viminfo" "Documents/" "Desktop/" "enc_keys/" "Templates/" "jan_krueger.p12" ".fonts/" ".bash_history" "Pictures/" ".purple/" ".recentf" ".emacs" ".vboxclient-seamless.pid" ".cache/" "Downloads/" ".zshrc" ".Xauthority" "Music/" ".conkyrc" ".gstreamer-0.10/" ".ssh/" "Public/" "./" ".zsh-update" ".xsession-errors.old" ".git/" ".ido.last" ".bash_logout" ".xmonad/" ".oh-my-zsh/" ".xsession-errors" "gitorious.txt" "examples.desktop" ".compiz/" ".config/" ".mozilla/" "bin/" "Videos/" "dzen/" ".zsh_history" ".pki/" ".dbus/" ".zcompdump" ".emacs~" ".local/" ".vboxclient-draganddrop.pid" "vpn.conf" ".gconf/" ".bashrc" ".dmrc" ".profile" ".vboxclient-clipboard.pid" ".ICEauthority" "../" ".emacs.d/" ".zshrc.pre-oh-my-zsh" ".keys/" ".vboxclient-display.pid")
+
+ ("/home/jan/.emacs.d/" (21019 18626) ".smex-items" "./" "elpa/" "jan.el" "snippets/" "auto-save-list/" "backups/" "../" "eshell/" "places")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/backends/linux/src/firewall/" (21019 18526) "meta.clj" "actions.clj" "rules.clj" "order.clj" "parameters.clj" "./" "flow.clj" "#backend.clj#" "matches.clj" "backend.clj" "../" "marks.clj" "policies.clj" "gen.clj")
+
+ ("/home/jan/.emacs.d/snippets/" (21019 18212) "clojure" "./" "../")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/backends/linux/src/" (21019 15938) "./" "../" "firewall/")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/backends/linux/debian/" (21019 15938) "etc/" "./" "../")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/backends/linux/" (21019 15938) "project.clj" "debian/" "./" "src/" "test/" "../")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/backends/" (21019 15938) "project.clj" "./" "linux/" "../")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/module/src/firewall/" (21019 15938) "validators.clj" "./" "descriptor.clj" "connections.clj" "model.clj" "reset.clj" "nodes.clj" "../" "commit.clj" "resources.clj")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/module/src/" (21019 15938) "./" "../" "firewall/")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/module/" (21019 15938) "project.clj" "debian/" "resources/" "./" "src/" "test/" "../")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/firewall/" (21019 15938) "module/" "project.clj" "./" ".git/" "rules/" "swi/" "doc/" "backends/" ".gitignore" "../")
+
+ ("/home/jan/Documents/xutm/repos/backend.module/" (21019 15965) "openvpn/" "ipsec/" "ui/" "interfaces/" "userdb/" "./" "dns/" "appfilter/" "certificates/" "time/" "internet/" "address-assignment/" "jobs/" "ua/" "../" "proxy/" "firewall/")
+
+ ("/home/jan/Documents/xutm/repos/" (21019 15984) "./" "backend.build/" "backend.core/" "backend.module/" "ext/" "../")
+
+ ("/home/jan/Documents/xutm/" (21019 16004) "pom.xml.bak" "repos/" "README.no__seriously" "project.clj" "debian/" "resources/" "./" ".git/" "scripts/" "README.md" "swi/" "releases/" "src/" "tasks/" ".lein-classpath" "doc/" ".gitignore" "../" ".mrconfig")
+
+ ("/home/jan/Documents/xutm/src/config/" (21019 15604) "./" "migrate_config.clj" "../")
+
+ ("/home/jan/Documents/xutm/src/" (21019 15604) "xutm/" "./" "migrations/" "../" "config/")
+
+ ("/home/jan/Documents/" (21019 15611) "xutm/" "./" "../")
+
+ ("/home/jan/dzen/" (21019 7213) "util.o" "config.mk" "dzen.h" "README.dzen" "dzen2" "./" "util.c" ".git/" "draw.o" "action.h" "bitmaps/" "action.o" "TODO" "gadgets/" "action.c" "README" "LICENSE" "main.c" "Makefile" "help" "draw.c" "../" "CREDITS" "main.o" "INSTALL")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
